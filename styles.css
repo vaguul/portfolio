@@ -132,6 +132,23 @@ h3 {
   font-size: 1.08rem;
 }
 
+.hero-highlights {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.hero-highlights span,
+.repo-meta {
+  color: var(--text);
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
 .hero-actions {
   display: flex;
   gap: 14px;
@@ -234,6 +251,19 @@ h3 {
   font-weight: 600;
 }
 
+.detail-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.repo-meta {
+  margin-top: -4px;
+  width: fit-content;
+  font-size: 0.78rem;
+}
+
 .chip-row {
   display: flex;
   gap: 10px;
@@ -267,11 +297,42 @@ h3 {
   font-family: "IBM Plex Mono", monospace;
 }
 
+.principles-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.principle-card {
+  min-height: 180px;
+}
+
+.principle-card strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.cta-section {
+  margin-bottom: 10px;
+}
+
+.cta-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 @media (max-width: 960px) {
   .stats-grid,
   .cards-grid,
-  .split-grid {
+  .split-grid,
+  .principles-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-panel {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -287,7 +348,8 @@ h3 {
 
   .stats-grid,
   .cards-grid,
-  .split-grid {
+  .split-grid,
+  .principles-grid {
     grid-template-columns: 1fr;
   }
 }
