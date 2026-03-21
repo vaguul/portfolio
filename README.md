@@ -1,6 +1,6 @@
 # portfolio
 
-Public portfolio site for `vuguul`.
+Public portfolio site for `Valaksi`.
 
 ## Stack
 
