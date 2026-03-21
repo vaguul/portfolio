@@ -1,6 +1,6 @@
 # portfolio
 
-Personal portfolio site for `vuguul`.
+Public portfolio site for `vuguul`.
 
 ## Stack
 
@@ -9,6 +9,6 @@ Personal portfolio site for `vuguul`.
 
 ## Purpose
 
-- public personal landing page
-- links to GitHub profile and selected public work
-- clean surface separated from private product repositories
+- public landing page
+- present private product direction without exposing private code
+- link to selected public repositories and GitHub identity
