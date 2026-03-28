@@ -6,19 +6,19 @@
     <title>Valaksi</title>
     <meta
       name="description"
-      content="Valaksi builds Zemiax products, private dashboards, automation systems, licensing backends, and selected open-source tooling."
+      content="Valaksi builds private products, operational dashboards, Discord tooling, licensing systems, and a small public layer of reusable infrastructure tools."
     />
     <meta property="og:title" content="Valaksi" />
     <meta
       property="og:description"
-      content="Valaksi builds private products, self-hosted systems, and selected open-source tooling."
+      content="Private products. Public tools. A minimal GitHub-first portfolio for software, infrastructure, and operational systems."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vuguul.github.io/portfolio/" />
+    <meta property="og:url" content="https://valaksi.github.io/portfolio/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
@@ -26,176 +26,124 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="brand-cluster">
-          <span class="brand">Valaksi</span>
-          <span class="brand-note" data-i18n="brandNote">Public layer for selected work.</span>
-        </div>
+        <a class="brand" href="#top">Valaksi</a>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#public" data-i18n="navPublic">Public</a>
+          <a href="#stack" data-i18n="navStack">Stack</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
         <div class="topbar-actions">
-          <nav class="toplinks" aria-label="Primary">
-            <a href="#work" data-i18n="navWork">Work</a>
-            <a href="#opensource" data-i18n="navOpenSource">Open Source</a>
-            <a href="#stack" data-i18n="navStack">Stack</a>
-            <a href="#contact" data-i18n="navContact">Contact</a>
-            <a href="https://github.com/vuguul" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://github.com/zemiax" target="_blank" rel="noreferrer">Zemiax</a>
-          </nav>
           <div class="lang-toggle" aria-label="Language switch">
             <button type="button" class="lang-button is-active" data-lang-trigger="en">EN</button>
             <button type="button" class="lang-button" data-lang-trigger="es">ES</button>
           </div>
+          <a class="toplink" href="https://github.com/valaksi" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </header>
 
-      <main>
+      <main id="top">
         <section class="hero">
-          <div class="hero-copy-wrap">
+          <div class="hero-copy">
             <p class="eyebrow" data-i18n="heroEyebrow">Private products. Public tools.</p>
-            <h1 data-i18n="heroTitle">Building software systems around operations, automation, and control.</h1>
-            <p class="hero-copy" data-i18n="heroCopy">
-              vuguul is the public layer behind Zemiax: dashboards, Discord tooling, licensing backends, self-hosted
-              infrastructure, and selected open-source utilities extracted from real product work.
+            <h1 data-i18n="heroTitle">Software for operations, automation, and control.</h1>
+            <p class="hero-text" data-i18n="heroText">
+              Valaksi is the public surface behind Zemiax: private product systems, selected public utilities, and a
+              GitHub-first body of work kept intentionally small and readable.
             </p>
-            <div class="hero-highlights" aria-label="Focus areas">
-              <span data-i18n="heroTag1">Admin systems</span>
-              <span data-i18n="heroTag2">Discord ops</span>
-              <span data-i18n="heroTag3">Licensing backends</span>
-              <span data-i18n="heroTag4">Self-hosted infra</span>
-            </div>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/vuguul" target="_blank" rel="noreferrer" data-i18n="heroPrimary">Open GitHub</a>
-              <a class="button secondary" href="https://github.com/zemiax" target="_blank" rel="noreferrer" data-i18n="heroSecondary">Open Zemiax</a>
+              <a class="button primary" href="https://github.com/valaksi" target="_blank" rel="noreferrer" data-i18n="heroPrimary">Open GitHub</a>
+              <a class="button secondary" href="https://github.com/zemiax" target="_blank" rel="noreferrer" data-i18n="heroSecondary">Open org</a>
             </div>
           </div>
-          <aside class="hero-panel panel">
-            <p class="section-label" data-i18n="heroPanelLabel">Operating model</p>
-            <h2 data-i18n="heroPanelTitle">Builder-first, ops-aware, product-driven.</h2>
-            <p data-i18n="heroPanelCopy">
-              The public side stays intentionally small: selected tooling, curated templates, and product-facing
-              presentation. The heavy business logic remains private until it is ready to be extracted cleanly.
-            </p>
-          </aside>
-        </section>
 
-        <section class="grid stats-grid" aria-label="Summary">
-          <article class="panel stat-card">
-            <strong>5</strong>
-            <span data-i18n="stat1">Private product tracks</span>
-          </article>
-          <article class="panel stat-card">
-            <strong>4</strong>
-            <span data-i18n="stat2">Public tools and starters</span>
-          </article>
-          <article class="panel stat-card">
-            <strong>3</strong>
-            <span data-i18n="stat3">Core languages in active use</span>
-          </article>
-          <article class="panel stat-card">
-            <strong>24/7</strong>
-            <span data-i18n="stat4">Self-hosted operating model</span>
-          </article>
+          <aside class="hero-aside">
+            <p class="aside-label" data-i18n="asideLabel">Working lanes</p>
+            <ul class="signal-list">
+              <li data-i18n="lane1">Admin systems and internal dashboards</li>
+              <li data-i18n="lane2">Discord operations and guild tooling</li>
+              <li data-i18n="lane3">Licensing backends for desktop products</li>
+              <li data-i18n="lane4">Self-hosted infrastructure and controlled deploy flow</li>
+            </ul>
+          </aside>
         </section>
 
         <section class="section" id="work">
           <div class="section-head">
-            <p class="section-label" data-i18n="productsLabel">Products</p>
-            <h2 data-i18n="productsTitle">Private product work</h2>
-            <p data-i18n="productsIntro">These are the systems currently being built and operated privately under Zemiax.</p>
+            <p class="section-label" data-i18n="workLabel">Private work</p>
+            <h2 data-i18n="workTitle">Current product line</h2>
           </div>
-          <div class="grid cards-grid">
-            <article class="panel product-card">
-              <div class="chip-row">
-                <span class="chip chip-private" data-i18n="privateChip">Private</span>
+
+          <div class="work-list">
+            <article class="work-item">
+              <div class="work-meta">
                 <span class="chip">PHP 8.5</span>
+                <span class="chip muted" data-i18n="chipPrivate">Private</span>
               </div>
               <h3>ZemiaxPanel</h3>
-              <p data-i18n="panelDesc">Admin-first SMM panel with payments, providers, routing fallback, reports, and operational controls.</p>
-              <ul class="detail-list">
-                <li data-i18n="panelPoint1">Providers and service import</li>
-                <li data-i18n="panelPoint2">Funding, routes, reports, and control center</li>
-                <li data-i18n="panelPoint3">Production-hosted under ZemiaxPanel</li>
-              </ul>
+              <p data-i18n="panelDesc">Admin-first SMM operations system with routing, providers, payments, and control workflows.</p>
             </article>
-            <article class="panel product-card">
-              <div class="chip-row">
-                <span class="chip chip-private" data-i18n="privateChip">Private</span>
+
+            <article class="work-item">
+              <div class="work-meta">
                 <span class="chip">TypeScript</span>
+                <span class="chip muted" data-i18n="chipPrivate">Private</span>
               </div>
               <h3>ZemiaxBot</h3>
-              <p data-i18n="botDesc">Discord operations stack with dashboard, API, worker, billing, analytics, and guild control workflows.</p>
-              <ul class="detail-list">
-                <li data-i18n="botPoint1">Dashboard plus API plus worker model</li>
-                <li data-i18n="botPoint2">Moderation, tickets, automations, billing</li>
-                <li data-i18n="botPoint3">Guild-by-guild operational surface</li>
-              </ul>
+              <p data-i18n="botDesc">Discord operations stack with dashboard, API, worker, billing, and guild control workflows.</p>
             </article>
-            <article class="panel product-card">
-              <div class="chip-row">
-                <span class="chip chip-private" data-i18n="privateChip">Private</span>
+
+            <article class="work-item">
+              <div class="work-meta">
                 <span class="chip">C# / WPF</span>
+                <span class="chip muted" data-i18n="chipPrivate">Private</span>
               </div>
               <h3>ZemiaxTweaks</h3>
-              <p data-i18n="tweaksDesc">Windows optimization app with licensing host, update signing, account flows, and validation tooling.</p>
-              <ul class="detail-list">
-                <li data-i18n="tweaksPoint1">Desktop app plus licensing host split</li>
-                <li data-i18n="tweaksPoint2">Signed update and membership flows</li>
-                <li data-i18n="tweaksPoint3">Windows-first utility software</li>
-              </ul>
+              <p data-i18n="tweaksDesc">Windows utility product with licensing, update validation, and account flows.</p>
             </article>
-            <article class="panel product-card">
-              <div class="chip-row">
-                <span class="chip chip-private" data-i18n="privateChip">Private</span>
+
+            <article class="work-item">
+              <div class="work-meta">
                 <span class="chip">Python</span>
+                <span class="chip muted" data-i18n="chipPrivate">Private</span>
               </div>
               <h3>ZemiaxBinance</h3>
-              <p data-i18n="binanceDesc">Trading engine and strategy runner focused on controlled automation, risk posture, and service operation.</p>
-              <ul class="detail-list">
-                <li data-i18n="binancePoint1">Worker-style runtime</li>
-                <li data-i18n="binancePoint2">Risk posture and execution discipline</li>
-                <li data-i18n="binancePoint3">Service-focused deployment</li>
-              </ul>
+              <p data-i18n="binanceDesc">Trading runtime focused on controlled automation, risk posture, and service operation.</p>
             </article>
           </div>
         </section>
 
-        <section class="section" id="opensource">
+        <section class="section" id="public">
           <div class="section-head">
-            <p class="section-label" data-i18n="openSourceLabel">Open Source</p>
-            <h2 data-i18n="openSourceTitle">Public work</h2>
-            <p data-i18n="openSourceIntro">Reusable pieces extracted from real workflows instead of publishing private business code directly.</p>
+            <p class="section-label" data-i18n="publicLabel">Public layer</p>
+            <h2 data-i18n="publicTitle">Selected repositories</h2>
           </div>
-          <div class="grid cards-grid">
-            <article class="panel repo-card">
-              <h3>discord-command-controls</h3>
-              <p data-i18n="repo1Desc">Shared command governance helpers for Discord bots and dashboards.</p>
-              <span class="repo-meta" data-i18n="repo1Meta">TypeScript · permissions · dashboard logic</span>
-              <a class="text-link" href="https://github.com/vuguul/discord-command-controls" target="_blank" rel="noreferrer" data-i18n="openRepo">Open repository</a>
-            </article>
-            <article class="panel repo-card">
-              <h3>social-feed-inputs</h3>
-              <p data-i18n="repo2Desc">Helpers to normalize social inputs and resolve feeds for alert systems.</p>
-              <span class="repo-meta" data-i18n="repo2Meta">TypeScript · feeds · alert input handling</span>
-              <a class="text-link" href="https://github.com/vuguul/social-feed-inputs" target="_blank" rel="noreferrer" data-i18n="openRepo">Open repository</a>
-            </article>
-            <article class="panel repo-card">
-              <h3>coolify-stack-starters</h3>
-              <p data-i18n="repo3Desc">Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.</p>
-              <span class="repo-meta" data-i18n="repo3Meta">Docker · Coolify · self-hosted templates</span>
-              <a class="text-link" href="https://github.com/vuguul/coolify-stack-starters" target="_blank" rel="noreferrer" data-i18n="openRepo">Open repository</a>
-            </article>
-            <article class="panel repo-card">
-              <h3>dark-founder-portfolio</h3>
-              <p data-i18n="repo4Desc">Minimal dark portfolio starter for founders, builders, and product operators.</p>
-              <span class="repo-meta" data-i18n="repo4Meta">HTML · CSS · personal brand starter</span>
-              <a class="text-link" href="https://github.com/vuguul/dark-founder-portfolio" target="_blank" rel="noreferrer" data-i18n="openRepo">Open repository</a>
-            </article>
+
+          <div class="repo-list">
+            <a class="repo-row" href="https://github.com/valaksi/discord-command-controls" target="_blank" rel="noreferrer">
+              <strong>discord-command-controls</strong>
+              <span data-i18n="repo1">Shared command governance helpers for Discord bots and dashboards.</span>
+            </a>
+            <a class="repo-row" href="https://github.com/valaksi/social-feed-inputs" target="_blank" rel="noreferrer">
+              <strong>social-feed-inputs</strong>
+              <span data-i18n="repo2">Helpers to normalize social inputs and resolve feeds for alert systems.</span>
+            </a>
+            <a class="repo-row" href="https://github.com/valaksi/coolify-stack-starters" target="_blank" rel="noreferrer">
+              <strong>coolify-stack-starters</strong>
+              <span data-i18n="repo3">Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.</span>
+            </a>
+            <a class="repo-row" href="https://github.com/valaksi/dark-founder-portfolio" target="_blank" rel="noreferrer">
+              <strong>dark-founder-portfolio</strong>
+              <span data-i18n="repo4">Minimal portfolio starter for builders and product operators.</span>
+            </a>
           </div>
         </section>
 
-        <section class="grid split-grid" id="stack">
-          <article class="panel">
+        <section class="section split-section" id="stack">
+          <article class="stack-panel">
             <p class="section-label" data-i18n="stackLabel">Stack</p>
-            <h2 data-i18n="stackTitle">Operating stack</h2>
-            <ul class="stack-list mono">
+            <h2 data-i18n="stackTitle">Core stack</h2>
+            <ul class="stack-list">
               <li>TypeScript / Node.js</li>
               <li>PHP / MariaDB</li>
               <li>Python / workers</li>
@@ -205,55 +153,26 @@
             </ul>
           </article>
 
-          <article class="panel">
+          <article class="stack-panel">
             <p class="section-label" data-i18n="approachLabel">Approach</p>
-            <h2 data-i18n="approachTitle">How the public layer works</h2>
-            <p data-i18n="approachCopy">
-              Private products stay private until they can be extracted into clean standalone packages, templates, or developer-facing tooling. The public side is curated on purpose: fewer repos, clearer positioning, better reuse.
+            <h2 data-i18n="approachTitle">How GitHub stays organized</h2>
+            <p class="stack-copy" data-i18n="approachCopy">
+              Product repos stay private under Zemiax. Public releases stay small, extracted, and separate from live
+              business code on purpose.
             </p>
           </article>
         </section>
 
-        <section class="section">
-          <div class="section-head">
-            <p class="section-label" data-i18n="principlesLabel">Principles</p>
-            <h2 data-i18n="principlesTitle">Operating rules</h2>
-          </div>
-          <div class="grid principles-grid">
-            <article class="panel principle-card">
-              <strong data-i18n="principle1Title">Private first</strong>
-              <p data-i18n="principle1Copy">Business logic and live product internals stay private until they can be extracted cleanly.</p>
-            </article>
-            <article class="panel principle-card">
-              <strong data-i18n="principle2Title">Reusable by default</strong>
-              <p data-i18n="principle2Copy">Public releases focus on helpers, templates, and infrastructure that can stand on their own.</p>
-            </article>
-            <article class="panel principle-card">
-              <strong data-i18n="principle3Title">Operational realism</strong>
-              <p data-i18n="principle3Copy">Most public tooling comes from systems that are already being run on a real VPS and product stack.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="contact">
-          <div class="section-head">
-            <p class="section-label" data-i18n="contactLabel">Contact</p>
-            <h2 data-i18n="contactTitle">Where to follow the public layer</h2>
-            <p data-i18n="contactIntro">
-              The portfolio stays intentionally compact. GitHub is the main surface for public releases, extracted tooling, and future updates.
-            </p>
-          </div>
-          <div class="panel contact-panel">
-            <div class="contact-copy">
-              <strong data-i18n="contactStrong">Selected releases and public tooling live here.</strong>
-              <p data-i18n="contactCopy">
-                The best way to track new public work is the GitHub profile and the repositories listed above. Brand-owned product repos under Zemiax stay private unless they become standalone public tools.
-              </p>
-            </div>
-            <div class="hero-actions">
-              <a class="button primary" href="https://github.com/vuguul" target="_blank" rel="noreferrer" data-i18n="contactPrimary">View profile</a>
-              <a class="button secondary" href="https://github.com/vuguul/portfolio" target="_blank" rel="noreferrer" data-i18n="contactSecondary">Portfolio repo</a>
-            </div>
+        <section class="section contact-section" id="contact">
+          <p class="section-label" data-i18n="contactLabel">Contact</p>
+          <h2 data-i18n="contactTitle">GitHub is the main public surface.</h2>
+          <p class="contact-copy" data-i18n="contactCopy">
+            Follow the profile for selected public releases. Live product repos stay private until they are ready to
+            stand on their own.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/valaksi" target="_blank" rel="noreferrer" data-i18n="contactPrimary">View profile</a>
+            <a class="button secondary" href="https://github.com/zemiax" target="_blank" rel="noreferrer" data-i18n="contactSecondary">View org</a>
           </div>
         </section>
       </main>
@@ -262,189 +181,115 @@
     <script>
       const translations = {
         en: {
-          brandNote: "Public layer for selected work.",
           navWork: "Work",
-          navOpenSource: "Open Source",
+          navPublic: "Public",
           navStack: "Stack",
           navContact: "Contact",
           heroEyebrow: "Private products. Public tools.",
-          heroTitle: "Building software systems around operations, automation, and control.",
-          heroCopy:
-            "Valaksi is the public layer behind Zemiax: dashboards, Discord tooling, licensing backends, self-hosted infrastructure, and selected open-source utilities extracted from real product work.",
-          heroTag1: "Admin systems",
-          heroTag2: "Discord ops",
-          heroTag3: "Licensing backends",
-          heroTag4: "Self-hosted infra",
+          heroTitle: "Software for operations, automation, and control.",
+          heroText:
+            "Valaksi is the public surface behind Zemiax: private product systems, selected public utilities, and a GitHub-first body of work kept intentionally small and readable.",
           heroPrimary: "Open GitHub",
-          heroSecondary: "Open Zemiax",
-          heroPanelLabel: "Operating model",
-          heroPanelTitle: "Builder-first, ops-aware, product-driven.",
-          heroPanelCopy:
-            "The public side stays intentionally small: selected tooling, curated templates, and product-facing presentation. The heavy business logic remains private until it is ready to be extracted cleanly.",
-          stat1: "Private product tracks",
-          stat2: "Public tools and starters",
-          stat3: "Core languages in active use",
-          stat4: "Self-hosted operating model",
-          productsLabel: "Products",
-          productsTitle: "Private product work",
-          productsIntro: "These are the systems currently being built and operated privately under Zemiax.",
-          privateChip: "Private",
-          panelDesc: "Admin-first SMM panel with payments, providers, routing fallback, reports, and operational controls.",
-          panelPoint1: "Providers and service import",
-          panelPoint2: "Funding, routes, reports, and control center",
-          panelPoint3: "Production-hosted under ZemiaxPanel",
-          botDesc: "Discord operations stack with dashboard, API, worker, billing, analytics, and guild control workflows.",
-          botPoint1: "Dashboard plus API plus worker model",
-          botPoint2: "Moderation, tickets, automations, billing",
-          botPoint3: "Guild-by-guild operational surface",
-          tweaksDesc: "Windows optimization app with licensing host, update signing, account flows, and validation tooling.",
-          tweaksPoint1: "Desktop app plus licensing host split",
-          tweaksPoint2: "Signed update and membership flows",
-          tweaksPoint3: "Windows-first utility software",
-          binanceDesc: "Trading engine and strategy runner focused on controlled automation, risk posture, and service operation.",
-          binancePoint1: "Worker-style runtime",
-          binancePoint2: "Risk posture and execution discipline",
-          binancePoint3: "Service-focused deployment",
-          openSourceLabel: "Open Source",
-          openSourceTitle: "Public work",
-          openSourceIntro: "Reusable pieces extracted from real workflows instead of publishing private business code directly.",
-          repo1Desc: "Shared command governance helpers for Discord bots and dashboards.",
-          repo1Meta: "TypeScript · permissions · dashboard logic",
-          repo2Desc: "Helpers to normalize social inputs and resolve feeds for alert systems.",
-          repo2Meta: "TypeScript · feeds · alert input handling",
-          repo3Desc: "Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.",
-          repo3Meta: "Docker · Coolify · self-hosted templates",
-          repo4Desc: "Minimal dark portfolio starter for founders, builders, and product operators.",
-          repo4Meta: "HTML · CSS · personal brand starter",
-          openRepo: "Open repository",
+          heroSecondary: "Open org",
+          asideLabel: "Working lanes",
+          lane1: "Admin systems and internal dashboards",
+          lane2: "Discord operations and guild tooling",
+          lane3: "Licensing backends for desktop products",
+          lane4: "Self-hosted infrastructure and controlled deploy flow",
+          workLabel: "Private work",
+          workTitle: "Current product line",
+          chipPrivate: "Private",
+          panelDesc: "Admin-first SMM operations system with routing, providers, payments, and control workflows.",
+          botDesc: "Discord operations stack with dashboard, API, worker, billing, and guild control workflows.",
+          tweaksDesc: "Windows utility product with licensing, update validation, and account flows.",
+          binanceDesc: "Trading runtime focused on controlled automation, risk posture, and service operation.",
+          publicLabel: "Public layer",
+          publicTitle: "Selected repositories",
+          repo1: "Shared command governance helpers for Discord bots and dashboards.",
+          repo2: "Helpers to normalize social inputs and resolve feeds for alert systems.",
+          repo3: "Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.",
+          repo4: "Minimal portfolio starter for builders and product operators.",
           stackLabel: "Stack",
-          stackTitle: "Operating stack",
+          stackTitle: "Core stack",
           approachLabel: "Approach",
-          approachTitle: "How the public layer works",
+          approachTitle: "How GitHub stays organized",
           approachCopy:
-            "Private products stay private until they can be extracted into clean standalone packages, templates, or developer-facing tooling. The public side is curated on purpose: fewer repos, clearer positioning, better reuse.",
-          principlesLabel: "Principles",
-          principlesTitle: "Operating rules",
-          principle1Title: "Private first",
-          principle1Copy: "Business logic and live product internals stay private until they can be extracted cleanly.",
-          principle2Title: "Reusable by default",
-          principle2Copy: "Public releases focus on helpers, templates, and infrastructure that can stand on their own.",
-          principle3Title: "Operational realism",
-          principle3Copy: "Most public tooling comes from systems that are already being run on a real VPS and product stack.",
+            "Product repos stay private under Zemiax. Public releases stay small, extracted, and separate from live business code on purpose.",
           contactLabel: "Contact",
-          contactTitle: "Where to follow the public layer",
-          contactIntro:
-            "The portfolio stays intentionally compact. GitHub is the main surface for public releases, extracted tooling, and future updates.",
-          contactStrong: "Selected releases and public tooling live here.",
+          contactTitle: "GitHub is the main public surface.",
           contactCopy:
-            "The best way to track new public work is the GitHub profile and the repositories listed above. Brand-owned product repos under Zemiax stay private unless they become standalone public tools.",
+            "Follow the profile for selected public releases. Live product repos stay private until they are ready to stand on their own.",
           contactPrimary: "View profile",
-          contactSecondary: "Portfolio repo"
+          contactSecondary: "View org"
         },
         es: {
-          brandNote: "Capa pública de trabajo seleccionado.",
           navWork: "Trabajo",
-          navOpenSource: "Open Source",
+          navPublic: "Público",
           navStack: "Stack",
           navContact: "Contacto",
           heroEyebrow: "Productos privados. Herramientas públicas.",
-          heroTitle: "Construyendo sistemas de software alrededor de operación, automatización y control.",
-          heroCopy:
-            "Valaksi es la capa pública detrás de Zemiax: dashboards, tooling para Discord, backends de licencias, infraestructura self-hosted y utilidades open-source extraídas de trabajo real de producto.",
-          heroTag1: "Sistemas admin",
-          heroTag2: "Discord ops",
-          heroTag3: "Backends de licencias",
-          heroTag4: "Infra self-hosted",
+          heroTitle: "Software para operaciones, automatización y control.",
+          heroText:
+            "Valaksi es la superficie pública detrás de Zemiax: sistemas de producto privados, utilidades públicas seleccionadas y una presencia en GitHub mantenida pequeña y clara a propósito.",
           heroPrimary: "Abrir GitHub",
-          heroSecondary: "Abrir Zemiax",
-          heroPanelLabel: "Modelo operativo",
-          heroPanelTitle: "Builder-first, orientado a operaciones y producto.",
-          heroPanelCopy:
-            "La capa pública se mantiene pequeña a propósito: tooling seleccionado, templates curados y presentación de producto. La lógica fuerte de negocio se queda privada hasta que pueda extraerse limpiamente.",
-          stat1: "Líneas de producto privadas",
-          stat2: "Herramientas y starters públicos",
-          stat3: "Lenguajes principales en uso",
-          stat4: "Modelo self-hosted",
-          productsLabel: "Productos",
-          productsTitle: "Trabajo privado de producto",
-          productsIntro: "Estos son los sistemas que actualmente se construyen y operan en privado bajo Zemiax.",
-          privateChip: "Privado",
-          panelDesc: "Panel SMM orientado a administración con pagos, providers, fallback de rutas, reportes y controles operativos.",
-          panelPoint1: "Providers e importación de servicios",
-          panelPoint2: "Funding, rutas, reportes y centro de control",
-          panelPoint3: "Alojado en producción bajo ZemiaxPanel",
-          botDesc: "Stack de operaciones para Discord con dashboard, API, worker, billing, analytics y flujos de control por guild.",
-          botPoint1: "Modelo dashboard más API más worker",
-          botPoint2: "Moderación, tickets, automatizaciones y billing",
-          botPoint3: "Superficie operativa por servidor",
-          tweaksDesc: "App de optimización para Windows con host de licencias, firma de updates, cuentas y tooling de validación.",
-          tweaksPoint1: "Separación entre app de escritorio y host de licencias",
-          tweaksPoint2: "Flujos de membresía y updates firmados",
-          tweaksPoint3: "Software utilitario enfocado en Windows",
-          binanceDesc: "Motor de trading y ejecución orientado a automatización controlada, postura de riesgo y operación de servicio.",
-          binancePoint1: "Runtime estilo worker",
-          binancePoint2: "Disciplina de ejecución y control de riesgo",
-          binancePoint3: "Despliegue centrado en servicio",
-          openSourceLabel: "Open Source",
-          openSourceTitle: "Trabajo público",
-          openSourceIntro: "Piezas reutilizables extraídas de flujos reales, sin publicar directamente el código privado del negocio.",
-          repo1Desc: "Helpers compartidos para gobernar comandos entre bots de Discord y dashboards.",
-          repo1Meta: "TypeScript · permisos · lógica de dashboard",
-          repo2Desc: "Helpers para normalizar inputs sociales y resolver feeds para sistemas de alertas.",
-          repo2Meta: "TypeScript · feeds · manejo de inputs",
-          repo3Desc: "Stacks base de Docker y Coolify para Node, PHP, workers y servicios con base de datos.",
-          repo3Meta: "Docker · Coolify · templates self-hosted",
-          repo4Desc: "Starter minimalista oscuro para portfolio de founders, builders y operadores de producto.",
-          repo4Meta: "HTML · CSS · starter de marca personal",
-          openRepo: "Abrir repositorio",
+          heroSecondary: "Abrir org",
+          asideLabel: "Líneas activas",
+          lane1: "Sistemas admin y dashboards internos",
+          lane2: "Operaciones de Discord y tooling por servidor",
+          lane3: "Backends de licencias para productos de escritorio",
+          lane4: "Infraestructura self-hosted y flujo de despliegue controlado",
+          workLabel: "Trabajo privado",
+          workTitle: "Línea actual de producto",
+          chipPrivate: "Privado",
+          panelDesc: "Sistema SMM admin-first con rutas, proveedores, pagos y flujos de control.",
+          botDesc: "Stack de operaciones para Discord con dashboard, API, worker, billing y flujos por servidor.",
+          tweaksDesc: "Producto de utilidad para Windows con licencias, validación de updates y flujos de cuenta.",
+          binanceDesc: "Runtime de trading enfocado en automatización controlada, postura de riesgo y operación del servicio.",
+          publicLabel: "Capa pública",
+          publicTitle: "Repos seleccionados",
+          repo1: "Helpers compartidos para gobernar comandos en bots y dashboards de Discord.",
+          repo2: "Helpers para normalizar entradas sociales y resolver feeds para sistemas de alertas.",
+          repo3: "Stacks base de Docker y Coolify para Node, PHP, workers y servicios con base de datos.",
+          repo4: "Starter de portfolio minimalista para builders y operadores de producto.",
           stackLabel: "Stack",
-          stackTitle: "Stack operativo",
+          stackTitle: "Stack principal",
           approachLabel: "Enfoque",
-          approachTitle: "Cómo funciona la capa pública",
+          approachTitle: "Cómo se mantiene ordenado GitHub",
           approachCopy:
-            "Los productos privados se quedan privados hasta que puedan convertirse en paquetes, templates o tooling público limpio. La parte pública se cura a propósito: menos repos, mejor posicionamiento y más reutilización.",
-          principlesLabel: "Principios",
-          principlesTitle: "Reglas de operación",
-          principle1Title: "Privado primero",
-          principle1Copy: "La lógica real de negocio y los internals vivos se quedan privados hasta poder extraerse limpiamente.",
-          principle2Title: "Reutilizable por defecto",
-          principle2Copy: "Las releases públicas se enfocan en helpers, templates e infraestructura que puedan sostenerse por sí solos.",
-          principle3Title: "Realismo operativo",
-          principle3Copy: "La mayor parte del tooling público viene de sistemas que ya están corriendo en un VPS y stack de producto reales.",
+            "Los repos de producto se quedan privados bajo Zemiax. Las releases públicas se mantienen pequeñas, extraídas y separadas del código vivo del negocio.",
           contactLabel: "Contacto",
-          contactTitle: "Dónde seguir la capa pública",
-          contactIntro:
-            "El portfolio se mantiene compacto a propósito. GitHub es la superficie principal para releases públicas, tooling extraído y futuras actualizaciones.",
-          contactStrong: "Las releases seleccionadas y el tooling público viven aquí.",
+          contactTitle: "GitHub es la superficie pública principal.",
           contactCopy:
-            "La mejor forma de seguir trabajo nuevo es el perfil de GitHub y los repos listados arriba. Los repos de producto bajo Zemiax siguen privados salvo que se conviertan en herramientas públicas independientes.",
+            "Sigue el perfil para ver releases públicas seleccionadas. Los repos de producto siguen privados hasta que puedan sostenerse solos.",
           contactPrimary: "Ver perfil",
-          contactSecondary: "Repo del portfolio"
+          contactSecondary: "Ver org"
         }
       };
 
-      function applyLanguage(lang) {
-        const current = translations[lang] ?? translations.en;
+      const langButtons = document.querySelectorAll("[data-lang-trigger]");
+      const translatables = document.querySelectorAll("[data-i18n]");
+
+      function setLanguage(lang) {
+        const dictionary = translations[lang] || translations.en;
         document.documentElement.lang = lang;
-        document.querySelectorAll("[data-i18n]").forEach((node) => {
+
+        translatables.forEach((node) => {
           const key = node.getAttribute("data-i18n");
-          if (!key || !(key in current)) return;
-          node.textContent = current[key];
+          if (key && dictionary[key]) {
+            node.textContent = dictionary[key];
+          }
         });
-        document.querySelectorAll("[data-lang-trigger]").forEach((button) => {
+
+        langButtons.forEach((button) => {
           button.classList.toggle("is-active", button.getAttribute("data-lang-trigger") === lang);
         });
-        localStorage.setItem("portfolio-lang", lang);
       }
 
-      const savedLanguage = localStorage.getItem("portfolio-lang") || "en";
-      applyLanguage(savedLanguage);
-
-      document.querySelectorAll("[data-lang-trigger]").forEach((button) => {
-        button.addEventListener("click", () => {
-          applyLanguage(button.getAttribute("data-lang-trigger") || "en");
-        });
+      langButtons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.getAttribute("data-lang-trigger")));
       });
+
+      setLanguage("en");
     </script>
   </body>
 </html>
