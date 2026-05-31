@@ -1,6 +1,6 @@
-# Valaksi portfolio
+# Vaguul / Zemiax portfolio
 
-Minimal public portfolio for the GitHub Pages site.
+Minimal public portfolio for Vaguul, the programmer behind Zemiax.
 
 - Live site: https://valaksi.github.io/portfolio/
 - Focus: operations software, Discord tooling, licensing, and self-hosted infrastructure
