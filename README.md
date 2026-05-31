@@ -2,7 +2,7 @@
 
 Minimal public portfolio for Vaguul, the programmer behind Zemiax.
 
-- Live site: https://valaksi.github.io/portfolio/
+- Live site: https://vaguul.github.io/portfolio/
 - Focus: operations software, Discord tooling, licensing, and self-hosted infrastructure
 
 ## Local check

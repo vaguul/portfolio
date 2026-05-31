@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://valaksi.github.io/portfolio/sitemap.xml
+Sitemap: https://vaguul.github.io/portfolio/sitemap.xml
