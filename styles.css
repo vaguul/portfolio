@@ -247,6 +247,17 @@ h3 {
   border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.hero-brand-mark {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  margin: 0 0 22px;
+  box-shadow: var(--shadow);
+}
+
 .signal-list {
   display: grid;
   gap: 12px;
