@@ -4,513 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaguul / Zemiax</title>
-    <meta
-      name="description"
-      content="Vaguul builds practical software for hire: websites, landing pages, dashboards, automation scripts, API integrations, bots, deploy fixes, and small product systems."
-    />
+    <meta name="description" content="Vaguul builds automation, bot tooling, and self-hosted applications. Explore public utilities, merged contributions, and Zemiax products." />
     <meta property="og:title" content="Vaguul / Zemiax" />
-    <meta
-      property="og:description"
-      content="Practical programming work: websites, dashboards, automation, bots, APIs, deployments, and small product systems."
-    />
+    <meta property="og:description" content="Automation, bot tooling, and self-hosted applications. Public code and selected contributions." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://vaguul.github.io/portfolio/" />
-    <meta property="og:image" content="https://vaguul.github.io/portfolio/assets/vaguul-service-banner.png" />
+    <meta property="og:image" content="https://vaguul.github.io/portfolio/assets/vaguul-github-banner.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://vaguul.github.io/portfolio/assets/vaguul-service-banner.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#top">Vaguul / Zemiax</a>
         <nav class="topnav" aria-label="Primary">
-          <a href="#work" data-i18n="navWork">Work</a>
-          <a href="#public" data-i18n="navPublic">Public</a>
-          <a href="#stack" data-i18n="navStack">Stack</a>
+          <a href="#public" data-i18n="navPublic">Public code</a>
+          <a href="#work" data-i18n="navWork">Products</a>
+          <a href="#oss" data-i18n="navOss">Contributions</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
-        <div class="topbar-actions">
-          <div class="lang-toggle" aria-label="Language switch">
-            <button type="button" class="lang-button is-active" data-lang-trigger="en">EN</button>
-            <button type="button" class="lang-button" data-lang-trigger="es">ES</button>
-          </div>
-          <a class="toplink" href="https://github.com/vaguul" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="toplink" href="https://contra.com/s/lrs7rUkr-bot-and-automation-fixes" target="_blank" rel="noreferrer">Hire</a>
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" class="lang-button" data-lang-trigger="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-button" data-lang-trigger="es" aria-pressed="false">ES</button>
         </div>
       </header>
 
-      <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow" data-i18n="heroEyebrow">Practical software. Fixed-scope work.</p>
-            <h1 data-i18n="heroTitle">Web apps, automation, dashboards, and bots that ship fast.</h1>
-            <p class="hero-text" data-i18n="heroText">
-              Vaguul builds useful software for small teams and creators: landing pages, MVP screens, admin tools,
-              API integrations, automation scripts, bots, and deployment fixes.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="https://github.com/vaguul" target="_blank" rel="noreferrer" data-i18n="heroPrimary">Open GitHub</a>
-              <a class="button secondary" href="https://contra.com/s/lrs7rUkr-bot-and-automation-fixes" target="_blank" rel="noreferrer" data-i18n="heroHire">Hire on Contra</a>
-              <a class="button secondary" href="https://github.com/zemiax" target="_blank" rel="noreferrer" data-i18n="heroSecondary">Open org</a>
-            </div>
+      <main id="main">
+        <section class="intro" id="top" aria-labelledby="intro-title">
+          <p class="eyebrow" data-i18n="eyebrow">Independent developer · Mexico</p>
+          <h1 id="intro-title">Vaguul</h1>
+          <p class="intro-text" data-i18n="intro">I build automation, Discord and Telegram tooling, and self-hosted applications under Zemiax.</p>
+          <div class="intro-links">
+            <a href="https://github.com/vaguul" data-i18n="github">GitHub profile</a>
+            <a href="https://github.com/zemiax">Zemiax</a>
+            <a href="#contact" data-i18n="contactLink">Work with me</a>
           </div>
-
-          <aside class="hero-aside">
-            <img class="hero-brand-mark" src="./assets/vaguul-marketplace-cover.png" alt="Vaguul service banner" />
-            <p class="aside-label" data-i18n="asideLabel">Working lanes</p>
-            <ul class="signal-list">
-              <li data-i18n="lane1">Landing pages, portfolios, and small business websites</li>
-              <li data-i18n="lane2">Dashboards, admin panels, and MVP screens</li>
-              <li data-i18n="lane3">Automation scripts, API integrations, and data workflows</li>
-              <li data-i18n="lane4">Discord/Telegram bots, Docker, Coolify, and deploy fixes</li>
-            </ul>
-          </aside>
+          <img class="brand-banner" src="./assets/vaguul-github-banner.png" alt="Vaguul / Zemiax — web apps, APIs and automation" width="1200" height="400" decoding="async" />
         </section>
 
-        <section class="section" id="services">
+        <section class="section" id="public" aria-labelledby="public-title">
           <div class="section-head">
-            <p class="section-label" data-i18n="servicesLabel">Hireable work</p>
-            <h2 data-i18n="servicesTitle">Fast programming services</h2>
+            <p class="section-label" data-i18n="publicLabel">Open source</p>
+            <h2 id="public-title" data-i18n="publicTitle">Selected tools</h2>
           </div>
-
-          <div class="work-list">
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">Web</span>
-                <span class="chip muted" data-i18n="chipFixed">Fixed scope</span>
-              </div>
-              <h3 data-i18n="service1Title">Landing page or portfolio</h3>
-              <p data-i18n="service1Desc">Responsive page, clean copy structure, contact CTA, GitHub or Netlify/Vercel deploy, and handoff notes.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">Fixes</span>
-                <span class="chip muted" data-i18n="chipFixed">Fixed scope</span>
-              </div>
-              <h3 data-i18n="service2Title">Bug fix or feature patch</h3>
-              <p data-i18n="service2Desc">Repo review, focused implementation, tests when useful, and a clear explanation of what changed.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">APIs</span>
-                <span class="chip muted" data-i18n="chipFixed">Fixed scope</span>
-              </div>
-              <h3 data-i18n="service3Title">Automation or API integration</h3>
-              <p data-i18n="service3Desc">Scripts, workflows, API connections, form handling, data cleanup, notifications, and admin operations.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">Bots</span>
-                <span class="chip muted" data-i18n="chipFixed">Fixed scope</span>
-              </div>
-              <h3 data-i18n="service4Title">Bot, dashboard, or deploy setup</h3>
-              <p data-i18n="service4Desc">Discord/Telegram commands, small dashboards, Docker/Coolify setup, CI fixes, and production-ready notes.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="work">
-          <div class="section-head">
-            <p class="section-label" data-i18n="workLabel">Private work</p>
-            <h2 data-i18n="workTitle">Current product line</h2>
-          </div>
-
-          <div class="work-list">
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">PHP 8.5</span>
-                <span class="chip muted" data-i18n="chipPrivate">Private</span>
-              </div>
-              <h3>ZemiaxPanel</h3>
-              <p data-i18n="panelDesc">Admin-first SMM operations system with routing, providers, payments, and control workflows.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">TypeScript</span>
-                <span class="chip muted" data-i18n="chipPrivate">Private</span>
-              </div>
-              <h3>ZemiaxBot</h3>
-              <p data-i18n="botDesc">Discord operations stack with dashboard, API, worker, billing, and guild control workflows.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">C# / WPF</span>
-                <span class="chip muted" data-i18n="chipPrivate">Private</span>
-              </div>
-              <h3>ZemiaxTweaks</h3>
-              <p data-i18n="tweaksDesc">Windows utility product with licensing, update validation, and account flows.</p>
-            </article>
-
-            <article class="work-item">
-              <div class="work-meta">
-                <span class="chip">Python</span>
-                <span class="chip muted" data-i18n="chipPrivate">Private</span>
-              </div>
-              <h3>ZemiaxBinance</h3>
-              <p data-i18n="binanceDesc">Trading runtime focused on controlled automation, risk posture, and service operation.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" id="public">
-          <div class="section-head">
-            <p class="section-label" data-i18n="publicLabel">Public layer</p>
-            <h2 data-i18n="publicTitle">Selected repositories</h2>
-          </div>
-
           <div class="repo-list">
-            <a class="repo-row" href="https://github.com/vaguul/discord-command-controls" target="_blank" rel="noreferrer">
-              <strong>discord-command-controls</strong>
-              <span data-i18n="repo1">Shared command governance helpers for Discord bots and dashboards.</span>
+            <a class="repo-row" href="https://github.com/vaguul/discord-command-controls">
+              <strong>discord-command-controls</strong><span data-i18n="discord">Shared command, role, and channel policies for Discord bots and dashboards.</span><small>TypeScript</small>
             </a>
-            <a class="repo-row" href="https://github.com/vaguul/social-feed-inputs" target="_blank" rel="noreferrer">
-              <strong>social-feed-inputs</strong>
-              <span data-i18n="repo2">Helpers to normalize social inputs and resolve feeds for alert systems.</span>
+            <a class="repo-row" href="https://github.com/vaguul/compose-config-env-lint">
+              <strong>compose-config-env-lint</strong><span data-i18n="compose">CLI checks for environment interpolation mistakes in Docker Compose configs.content.</span><small>TypeScript / CLI</small>
             </a>
-            <a class="repo-row" href="https://github.com/vaguul/coolify-stack-starters" target="_blank" rel="noreferrer">
-              <strong>coolify-stack-starters</strong>
-              <span data-i18n="repo3">Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.</span>
+            <a class="repo-row" href="https://github.com/vaguul/social-feed-inputs">
+              <strong>social-feed-inputs</strong><span data-i18n="social">Normalize supported social inputs into predictable feed and API URLs.</span><small>TypeScript</small>
             </a>
-            <a class="repo-row" href="https://github.com/vaguul/compose-config-env-lint" target="_blank" rel="noreferrer">
-              <strong>compose-config-env-lint</strong>
-              <span data-i18n="repo5">CLI lint for Docker Compose configs.content runtime environment interpolation mistakes.</span>
+            <a class="repo-row" href="https://github.com/vaguul/coolify-stack-starters">
+              <strong>coolify-stack-starters</strong><span data-i18n="starters">Docker Compose starters with configuration checks, healthchecks, and deployment notes.</span><small>Docker / templates</small>
             </a>
-            <a class="repo-row" href="https://github.com/vaguul/oss-maintainer-snapshot" target="_blank" rel="noreferrer">
-              <strong>oss-maintainer-snapshot</strong>
-              <span data-i18n="repo6">Read-only GitHub maintenance queue reports for issues and pull requests.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/dark-founder-portfolio" target="_blank" rel="noreferrer">
-              <strong>dark-founder-portfolio</strong>
-              <span data-i18n="repo4">Minimal portfolio starter for builders and product operators.</span>
+            <a class="repo-row" href="https://github.com/vaguul/codex-account-switcher-windows/releases/tag/v0.2.11">
+              <strong>codex-account-switcher-windows <span class="status" data-i18n="preview">Preview</span></strong><span data-i18n="switcher">Independent Windows utility for manual account switching with encrypted local profiles. Unsigned preview; check compatibility before use.</span><small>C# / WPF</small>
             </a>
           </div>
+          <p class="section-note"><span data-i18n="more">Also available:</span> <a href="https://github.com/vaguul/oss-maintainer-snapshot">oss-maintainer-snapshot</a> <span data-i18n="and">and</span> <a href="https://github.com/vaguul/dark-founder-portfolio">dark-founder-portfolio</a>.</p>
         </section>
 
-        <section class="section" id="oss">
+        <section class="section" id="work" aria-labelledby="work-title">
           <div class="section-head">
-            <p class="section-label" data-i18n="ossLabel">Open source</p>
-            <h2 data-i18n="ossTitle">Maintenance and contributions</h2>
+            <p class="section-label">Zemiax</p>
+            <h2 id="work-title" data-i18n="workTitle">Product development</h2>
           </div>
+          <p class="section-note" data-i18n="privateNote">These product repositories are private. The descriptions below are areas of development, not a claim that every feature is publicly released.</p>
+          <dl class="product-list">
+            <div><dt>ZemiaxPanel</dt><dd data-i18n="panel">Operations panel for providers, clients, payments, tickets, and administration.</dd></div>
+            <div><dt>ZemiaxPay</dt><dd data-i18n="pay">Payment collection and checkout workflows.</dd></div>
+            <div><dt>Daebor Discord</dt><dd data-i18n="discordProduct">Discord platform with a dashboard, API, workers, billing, and server controls.</dd></div>
+            <div><dt>Daebor Telegram</dt><dd data-i18n="telegram">Telegram bot tooling, group management, and automation.</dd></div>
+            <div><dt>LubuMail / LubuMail Mobile</dt><dd data-i18n="mail">Mail administration, webmail, and mobile-client development.</dd></div>
+            <div><dt>LubuHost</dt><dd data-i18n="host">Control plane for projects, hosting, clients, and operations.</dd></div>
+            <div><dt>ZemiaxTweaks</dt><dd data-i18n="tweaks">Windows tooling with licensing, update validation, and support workflows.</dd></div>
+          </dl>
+        </section>
 
+        <section class="section" id="oss" aria-labelledby="oss-title">
+          <div class="section-head">
+            <p class="section-label" data-i18n="ossLabel">Merged work</p>
+            <h2 id="oss-title" data-i18n="ossTitle">Selected contributions</h2>
+          </div>
           <div class="repo-list">
-            <a class="repo-row" href="https://github.com/vaguul/compose-config-env-lint/releases/tag/v0.1.1" target="_blank" rel="noreferrer">
-              <strong>compose-config-env-lint v0.1.1</strong>
-              <span data-i18n="oss4">Maintainer release adding JSON output for CI and clearer Compose interpolation examples.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/oss-maintainer-snapshot/releases/tag/v0.1.2" target="_blank" rel="noreferrer">
-              <strong>oss-maintainer-snapshot v0.1.2</strong>
-              <span data-i18n="oss9">Maintainer release adding attention grouping for review-required PRs and triage labels.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/coolify-stack-starters/releases/tag/v0.1.1" target="_blank" rel="noreferrer">
-              <strong>coolify-stack-starters v0.1.1</strong>
-              <span data-i18n="oss5">Maintainer release adding a starter validation matrix with passing Compose and security checks.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/social-feed-inputs/releases/tag/v0.1.2" target="_blank" rel="noreferrer">
-              <strong>social-feed-inputs v0.1.2</strong>
-              <span data-i18n="oss6">Maintainer release adding feed URL edge-case fixtures with CI, CodeQL, and security checks passing.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/discord-command-controls/releases/tag/v0.1.4" target="_blank" rel="noreferrer">
-              <strong>discord-command-controls v0.1.4</strong>
-              <span data-i18n="oss7">Maintainer release for dashboard role override fixtures and policy examples.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/vaguul/dark-founder-portfolio/releases/tag/v0.1.1" target="_blank" rel="noreferrer">
-              <strong>dark-founder-portfolio v0.1.1</strong>
-              <span data-i18n="oss8">Template release documenting reuse for a minimal founder portfolio starter.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/AntiMicroX/antimicrox/pull/1330" target="_blank" rel="noreferrer">
-              <strong>AntiMicroX/antimicrox#1330</strong>
-              <span data-i18n="oss2">External contribution fixing changelog link behavior with regression coverage and full CI passing.</span>
-            </a>
-            <a class="repo-row" href="https://github.com/gabrielgz0/pypncp/pull/7" target="_blank" rel="noreferrer">
-              <strong>gabrielgz0/pypncp#7</strong>
-              <span data-i18n="oss3">External contribution adding resource get() tests for success and 404 behavior.</span>
-            </a>
+            <a class="repo-row" href="https://github.com/coollabsio/coolify/pull/10576"><strong>Coolify #10576</strong><span data-i18n="contrib1">Correct GitHub Enterprise installation paths.</span><small data-i18n="merged">Merged</small></a>
+            <a class="repo-row" href="https://github.com/DevilsAutumn/quater/pull/139"><strong>Quater #139</strong><span data-i18n="contrib2">Regression tests for RouteGroup include guards.</span><small data-i18n="merged">Merged</small></a>
+            <a class="repo-row" href="https://github.com/AntiMicroX/antimicrox/pull/1330"><strong>AntiMicroX #1330</strong><span data-i18n="contrib3">Fix external changelog links with regression coverage.</span><small data-i18n="merged">Merged</small></a>
           </div>
+          <p class="section-note"><a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Avaguul+is%3Apublic+-user%3Avaguul+-user%3Azemiax" data-i18n="allContributions">Browse all merged external pull requests</a></p>
         </section>
 
-        <section class="section" id="case-studies">
-          <div class="section-head">
-            <p class="section-label" data-i18n="caseLabel">Case studies</p>
-            <h2 data-i18n="caseTitle">Compact public proof</h2>
-          </div>
-
-          <div class="case-grid">
-            <a class="case-item" href="https://github.com/vaguul/discord-command-controls" target="_blank" rel="noreferrer">
-              <span class="case-kicker" data-i18n="case1Kicker">Discord tooling</span>
-              <strong>discord-command-controls</strong>
-              <p data-i18n="case1Text">A small TypeScript package that keeps command toggles, role policy, channel policy, docs, and tests in one reusable place.</p>
-            </a>
-            <a class="case-item" href="https://github.com/vaguul/coolify-stack-starters" target="_blank" rel="noreferrer">
-              <span class="case-kicker" data-i18n="case2Kicker">Self-hosted deploys</span>
-              <strong>coolify-stack-starters</strong>
-              <p data-i18n="case2Text">Docker Compose starters with validation, healthcheck notes, and safer defaults for app services, databases, and workers.</p>
-            </a>
-            <a class="case-item" href="https://github.com/vaguul/social-feed-inputs" target="_blank" rel="noreferrer">
-              <span class="case-kicker" data-i18n="case3Kicker">Feed normalization</span>
-              <strong>social-feed-inputs</strong>
-              <p data-i18n="case3Text">Utilities for turning social URLs and handles into predictable feed inputs for alerting and automation workflows.</p>
-            </a>
-            <a class="case-item" href="https://github.com/vaguul/compose-config-env-lint" target="_blank" rel="noreferrer">
-              <span class="case-kicker" data-i18n="case4Kicker">Compose lint</span>
-              <strong>compose-config-env-lint</strong>
-              <p data-i18n="case4Text">A tested CLI that catches `$VAR` usage in Compose configs content before it becomes a broken generated file.</p>
-            </a>
-            <a class="case-item" href="https://github.com/vaguul/oss-maintainer-snapshot" target="_blank" rel="noreferrer">
-              <span class="case-kicker" data-i18n="case5Kicker">Maintainer workflow</span>
-              <strong>oss-maintainer-snapshot</strong>
-              <p data-i18n="case5Text">A read-only GitHub CLI wrapper that turns open issues and pull requests into a compact maintenance report.</p>
-            </a>
-          </div>
-        </section>
-
-        <section class="section split-section" id="stack">
-          <article class="stack-panel">
-            <p class="section-label" data-i18n="stackLabel">Stack</p>
-            <h2 data-i18n="stackTitle">Core stack</h2>
-            <ul class="stack-list">
-              <li>TypeScript / Node.js</li>
-              <li>PHP / MariaDB</li>
-              <li>Python / workers</li>
-              <li>Docker / Coolify</li>
-              <li>PostgreSQL / Redis</li>
-              <li>WPF / Windows tooling</li>
-            </ul>
-          </article>
-
-          <article class="stack-panel">
-            <p class="section-label" data-i18n="approachLabel">Approach</p>
-            <h2 data-i18n="approachTitle">How GitHub stays organized</h2>
-            <p class="stack-copy" data-i18n="approachCopy">
-              Product repos stay private under Zemiax. Public releases stay small, extracted, and separate from live
-              business code on purpose.
-            </p>
-          </article>
-        </section>
-
-        <section class="section contact-section" id="contact">
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
           <p class="section-label" data-i18n="contactLabel">Contact</p>
-          <h2 data-i18n="contactTitle">GitHub is the main public surface.</h2>
-          <p class="contact-copy" data-i18n="contactCopy">
-            Follow the profile for selected public releases. Live product repos stay private until they are ready to
-            stand on their own.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://contra.com/s/lrs7rUkr-bot-and-automation-fixes" target="_blank" rel="noreferrer" data-i18n="contactPrimary">Hire on Contra</a>
-            <a class="button secondary" href="https://github.com/vaguul" target="_blank" rel="noreferrer" data-i18n="contactSecondary">View profile</a>
-            <a class="button secondary" href="mailto:heyvaguul@gmail.com" data-i18n="contactEmail">Email Vaguul</a>
+          <h2 id="contact-title" data-i18n="contactTitle">Have a specific problem to solve?</h2>
+          <p class="section-note" data-i18n="contactText">API integrations, automation, bots, dashboards, bug fixes, and self-hosted deployments. Send the scope, current behavior, and expected result.</p>
+          <div class="intro-links">
+            <a href="https://contra.com/s/lrs7rUkr-automation-api-integrations-and-internal-tools" data-i18n="brief">Send a project brief</a>
+            <a href="mailto:heyvaguul@gmail.com" data-i18n="email">Email Vaguul</a>
           </div>
         </section>
       </main>
+      <footer>Vaguul / Zemiax <span aria-hidden="true">·</span> <a href="https://github.com/vaguul/portfolio" data-i18n="source">Website source</a></footer>
     </div>
-
     <script>
       const translations = {
         en: {
-          navWork: "Work",
-          navPublic: "Public",
-          navStack: "Stack",
-          navContact: "Contact",
-          heroEyebrow: "Practical software. Fixed-scope work.",
-          heroTitle: "Web apps, automation, dashboards, and bots that ship fast.",
-          heroText:
-            "Vaguul builds useful software for small teams and creators: landing pages, MVP screens, admin tools, API integrations, automation scripts, bots, and deployment fixes.",
-          heroPrimary: "Open GitHub",
-          heroHire: "Hire on Contra",
-          heroSecondary: "Open org",
-          asideLabel: "Working lanes",
-          lane1: "Landing pages, portfolios, and small business websites",
-          lane2: "Dashboards, admin panels, and MVP screens",
-          lane3: "Automation scripts, API integrations, and data workflows",
-          lane4: "Discord/Telegram bots, Docker, Coolify, and deploy fixes",
-          servicesLabel: "Hireable work",
-          servicesTitle: "Fast programming services",
-          chipFixed: "Fixed scope",
-          service1Title: "Landing page or portfolio",
-          service1Desc: "Responsive page, clean copy structure, contact CTA, GitHub or Netlify/Vercel deploy, and handoff notes.",
-          service2Title: "Bug fix or feature patch",
-          service2Desc: "Repo review, focused implementation, tests when useful, and a clear explanation of what changed.",
-          service3Title: "Automation or API integration",
-          service3Desc: "Scripts, workflows, API connections, form handling, data cleanup, notifications, and admin operations.",
-          service4Title: "Bot, dashboard, or deploy setup",
-          service4Desc: "Discord/Telegram commands, small dashboards, Docker/Coolify setup, CI fixes, and production-ready notes.",
-          workLabel: "Private work",
-          workTitle: "Current product line",
-          chipPrivate: "Private",
-          panelDesc: "Admin-first SMM operations system with routing, providers, payments, and control workflows.",
-          botDesc: "Discord operations stack with dashboard, API, worker, billing, and guild control workflows.",
-          tweaksDesc: "Windows utility product with licensing, update validation, and account flows.",
-          binanceDesc: "Trading runtime focused on controlled automation, risk posture, and service operation.",
-          publicLabel: "Public layer",
-          publicTitle: "Selected repositories",
-          repo1: "Shared command governance helpers for Discord bots and dashboards.",
-          repo2: "Helpers to normalize social inputs and resolve feeds for alert systems.",
-          repo3: "Starter Docker and Coolify stacks for Node, PHP, workers, and database-backed services.",
-          repo4: "Minimal portfolio starter for builders and product operators.",
-          repo5: "CLI lint for Docker Compose configs.content runtime environment interpolation mistakes.",
-          repo6: "Read-only GitHub maintenance queue reports for issues and pull requests.",
-          ossLabel: "Open source",
-          ossTitle: "Maintenance and contributions",
-          oss2: "External contribution fixing changelog link behavior with regression coverage and full CI passing.",
-          oss3: "External contribution adding resource get() tests for success and 404 behavior.",
-          oss4: "Maintainer release adding JSON output for CI and clearer Compose interpolation examples.",
-          oss5: "Maintainer release adding a starter validation matrix with passing Compose and security checks.",
-          oss6: "Maintainer release adding feed URL edge-case fixtures with CI, CodeQL, and security checks passing.",
-          oss7: "Maintainer release for dashboard role override fixtures and policy examples.",
-          oss8: "Template release documenting reuse for a minimal founder portfolio starter.",
-          oss9: "Maintainer release adding attention grouping for review-required PRs and triage labels.",
-          caseLabel: "Case studies",
-          caseTitle: "Compact public proof",
-          case1Kicker: "Discord tooling",
-          case1Text:
-            "A small TypeScript package that keeps command toggles, role policy, channel policy, docs, and tests in one reusable place.",
-          case2Kicker: "Self-hosted deploys",
-          case2Text:
-            "Docker Compose starters with validation, healthcheck notes, and safer defaults for app services, databases, and workers.",
-          case3Kicker: "Feed normalization",
-          case3Text:
-            "Utilities for turning social URLs and handles into predictable feed inputs for alerting and automation workflows.",
-          case4Kicker: "Compose lint",
-          case4Text:
-            "A tested CLI that catches `$VAR` usage in Compose configs content before it becomes a broken generated file.",
-          case5Kicker: "Maintainer workflow",
-          case5Text:
-            "A read-only GitHub CLI wrapper that turns open issues and pull requests into a compact maintenance report.",
-          stackLabel: "Stack",
-          stackTitle: "Core stack",
-          approachLabel: "Approach",
-          approachTitle: "How GitHub stays organized",
-          approachCopy:
-            "Product repos stay private under Zemiax. Public releases stay small, extracted, and separate from live business code on purpose.",
-          contactLabel: "Contact",
-          contactTitle: "Available for focused programming work.",
-          contactCopy:
-            "Send a small, specific problem: website, dashboard, bug fix, automation, API, bot, deployment, or maintenance task.",
-          contactPrimary: "Hire on Contra",
-          contactSecondary: "View profile",
-          contactEmail: "Email Vaguul"
+          skip: "Skip to content", navPublic: "Public code", navWork: "Products", navOss: "Contributions", navContact: "Contact",
+          eyebrow: "Independent developer · Mexico", intro: "I build automation, Discord and Telegram tooling, and self-hosted applications under Zemiax.",
+          github: "GitHub profile", contactLink: "Work with me", publicLabel: "Open source", publicTitle: "Selected tools",
+          discord: "Shared command, role, and channel policies for Discord bots and dashboards.",
+          compose: "CLI checks for environment interpolation mistakes in Docker Compose configs.content.",
+          social: "Normalize supported social inputs into predictable feed and API URLs.",
+          starters: "Docker Compose starters with configuration checks, healthchecks, and deployment notes.",
+          preview: "Preview", switcher: "Independent Windows utility for manual account switching with encrypted local profiles. Unsigned preview; check compatibility before use.",
+          more: "Also available:", and: "and", workTitle: "Product development",
+          privateNote: "These product repositories are private. The descriptions below are areas of development, not a claim that every feature is publicly released.",
+          panel: "Operations panel for providers, clients, payments, tickets, and administration.", pay: "Payment collection and checkout workflows.",
+          discordProduct: "Discord platform with a dashboard, API, workers, billing, and server controls.", telegram: "Telegram bot tooling, group management, and automation.",
+          mail: "Mail administration, webmail, and mobile-client development.", host: "Control plane for projects, hosting, clients, and operations.",
+          tweaks: "Windows tooling with licensing, update validation, and support workflows.",
+          ossLabel: "Merged work", ossTitle: "Selected contributions", contrib1: "Correct GitHub Enterprise installation paths.",
+          contrib2: "Regression tests for RouteGroup include guards.", contrib3: "Fix external changelog links with regression coverage.",
+          merged: "Merged", allContributions: "Browse all merged external pull requests", contactLabel: "Contact", contactTitle: "Have a specific problem to solve?",
+          contactText: "API integrations, automation, bots, dashboards, bug fixes, and self-hosted deployments. Send the scope, current behavior, and expected result.",
+          brief: "Send a project brief", email: "Email Vaguul", source: "Website source"
         },
         es: {
-          navWork: "Trabajo",
-          navPublic: "Público",
-          navStack: "Stack",
-          navContact: "Contacto",
-          heroEyebrow: "Software práctico. Trabajo por alcance fijo.",
-          heroTitle: "Web apps, automatización, dashboards y bots que se entregan rápido.",
-          heroText:
-            "Vaguul construye software útil para equipos pequeños y creadores: landing pages, pantallas MVP, paneles admin, integraciones API, scripts de automatización, bots y arreglos de despliegue.",
-          heroPrimary: "Abrir GitHub",
-          heroHire: "Contratar en Contra",
-          heroSecondary: "Abrir org",
-          asideLabel: "Líneas activas",
-          lane1: "Landing pages, portfolios y sitios para negocios pequeños",
-          lane2: "Dashboards, paneles admin y pantallas MVP",
-          lane3: "Scripts de automatización, integraciones API y flujos de datos",
-          lane4: "Bots de Discord/Telegram, Docker, Coolify y arreglos de deploy",
-          servicesLabel: "Trabajo contratable",
-          servicesTitle: "Servicios rápidos de programación",
-          chipFixed: "Alcance fijo",
-          service1Title: "Landing page o portfolio",
-          service1Desc: "Página responsive, estructura clara, llamada a contacto, deploy en GitHub o Netlify/Vercel y notas de entrega.",
-          service2Title: "Bug fix o feature pequeña",
-          service2Desc: "Revisión del repo, implementación enfocada, tests cuando sirvan y explicación clara de lo cambiado.",
-          service3Title: "Automatización o integración API",
-          service3Desc: "Scripts, workflows, conexiones API, formularios, limpieza de datos, notificaciones y operaciones admin.",
-          service4Title: "Bot, dashboard o setup de deploy",
-          service4Desc: "Comandos Discord/Telegram, dashboards pequeños, Docker/Coolify, arreglos CI y notas listas para producción.",
-          workLabel: "Trabajo privado",
-          workTitle: "Línea actual de producto",
-          chipPrivate: "Privado",
-          panelDesc: "Sistema SMM admin-first con rutas, proveedores, pagos y flujos de control.",
-          botDesc: "Stack de operaciones para Discord con dashboard, API, worker, billing y flujos por servidor.",
-          tweaksDesc: "Producto de utilidad para Windows con licencias, validación de updates y flujos de cuenta.",
-          binanceDesc: "Runtime de trading enfocado en automatización controlada, postura de riesgo y operación del servicio.",
-          publicLabel: "Capa pública",
-          publicTitle: "Repos seleccionados",
-          repo1: "Helpers compartidos para gobernar comandos en bots y dashboards de Discord.",
-          repo2: "Helpers para normalizar entradas sociales y resolver feeds para sistemas de alertas.",
-          repo3: "Stacks base de Docker y Coolify para Node, PHP, workers y servicios con base de datos.",
-          repo4: "Starter de portfolio minimalista para builders y operadores de producto.",
-          repo5: "CLI para detectar errores de interpolación runtime en configs.content de Docker Compose.",
-          repo6: "Reportes read-only de colas de mantenimiento GitHub para issues y pull requests.",
-          ossLabel: "Open source",
-          ossTitle: "Mantenimiento y contribuciones",
-          oss2: "Contribución externa que corrige enlaces del changelog con cobertura de regresión y CI completo en verde.",
-          oss3: "Contribución externa que agrega tests de get() para casos correctos y 404.",
-          oss4: "Release mantenida que agrega salida JSON para CI y ejemplos más claros de interpolación Compose.",
-          oss5: "Release mantenida que agrega matriz de validación con checks Compose y seguridad en verde.",
-          oss6: "Release mantenida que agrega fixtures de URLs edge-case con CI, CodeQL y seguridad en verde.",
-          oss7: "Release mantenida para fixtures de overrides de roles y ejemplos de políticas de dashboard.",
-          oss8: "Release de template que documenta reutilización para un portfolio minimalista.",
-          oss9: "Release mantenida que agrupa PRs que requieren revisión y labels de triage.",
-          caseLabel: "Casos",
-          caseTitle: "Prueba pública compacta",
-          case1Kicker: "Tooling de Discord",
-          case1Text:
-            "Un paquete TypeScript pequeño que mantiene toggles de comandos, políticas por rol, políticas por canal, docs y tests en un lugar reutilizable.",
-          case2Kicker: "Deploys self-hosted",
-          case2Text:
-            "Starters Docker Compose con validación, notas de healthcheck y defaults más seguros para apps, bases de datos y workers.",
-          case3Kicker: "Normalización de feeds",
-          case3Text:
-            "Utilidades para convertir URLs y handles sociales en entradas de feed predecibles para alertas y automatización.",
-          case4Kicker: "Lint de Compose",
-          case4Text:
-            "Una CLI con tests que detecta uso de `$VAR` en content de configs Compose antes de que genere archivos rotos.",
-          case5Kicker: "Flujo maintainer",
-          case5Text:
-            "Un wrapper read-only de GitHub CLI que convierte issues y pull requests abiertos en un reporte compacto de mantenimiento.",
-          stackLabel: "Stack",
-          stackTitle: "Stack principal",
-          approachLabel: "Enfoque",
-          approachTitle: "Cómo se mantiene ordenado GitHub",
-          approachCopy:
-            "Los repos de producto se quedan privados bajo Zemiax. Las releases públicas se mantienen pequeñas, extraídas y separadas del código vivo del negocio.",
-          contactLabel: "Contacto",
-          contactTitle: "Disponible para trabajos enfocados de programación.",
-          contactCopy:
-            "Envía un problema pequeño y específico: sitio web, dashboard, bug fix, automatización, API, bot, deploy o mantenimiento.",
-          contactPrimary: "Contratar en Contra",
-          contactSecondary: "Ver perfil",
-          contactEmail: "Enviar email"
+          skip: "Ir al contenido", navPublic: "Código público", navWork: "Productos", navOss: "Contribuciones", navContact: "Contacto",
+          eyebrow: "Desarrollador independiente · México", intro: "Desarrollo automatización, herramientas para Discord y Telegram y aplicaciones autoalojadas bajo Zemiax.",
+          github: "Perfil de GitHub", contactLink: "Trabajemos juntos", publicLabel: "Código abierto", publicTitle: "Herramientas seleccionadas",
+          discord: "Políticas compartidas de comandos, roles y canales para bots y paneles de Discord.",
+          compose: "CLI que detecta errores de interpolación de variables en configs.content de Docker Compose.",
+          social: "Normaliza entradas de redes compatibles en URLs predecibles de feeds y APIs.",
+          starters: "Plantillas Docker Compose con validación de configuración, comprobaciones de salud y notas de despliegue.",
+          preview: "Preliminar", switcher: "Utilidad independiente para cambiar de cuenta manualmente en Windows con perfiles locales cifrados. Versión preliminar sin firma; comprueba la compatibilidad antes de usarla.",
+          more: "También disponibles:", and: "y", workTitle: "Desarrollo de productos",
+          privateNote: "Los repositorios de estos productos son privados. Estas descripciones indican áreas de desarrollo, no que todas sus funciones estén publicadas.",
+          panel: "Panel de operaciones para proveedores, clientes, pagos, tickets y administración.", pay: "Flujos de cobro y checkout.",
+          discordProduct: "Plataforma de Discord con panel, API, procesos en segundo plano, facturación y controles por servidor.", telegram: "Herramientas de bots de Telegram, gestión de grupos y automatización.",
+          mail: "Administración de correo, webmail y desarrollo de clientes móviles.", host: "Panel de control para proyectos, alojamiento, clientes y operaciones.",
+          tweaks: "Herramientas de Windows con licencias, validación de actualizaciones y flujos de soporte.",
+          ossLabel: "Cambios integrados", ossTitle: "Contribuciones seleccionadas", contrib1: "Corrección de rutas de instalación de GitHub Enterprise.",
+          contrib2: "Pruebas de regresión para las protecciones de inclusión de RouteGroup.", contrib3: "Corrección de enlaces externos del historial de cambios con pruebas de regresión.",
+          merged: "Integrado", allContributions: "Ver todos los pull requests externos integrados", contactLabel: "Contacto", contactTitle: "¿Tienes un problema concreto por resolver?",
+          contactText: "Integraciones API, automatización, bots, paneles, correcciones y despliegues autoalojados. Envía el alcance, el comportamiento actual y el resultado esperado.",
+          brief: "Enviar propuesta de proyecto", email: "Escribir a Vaguul", source: "Código del sitio"
         }
       };
-
-      const langButtons = document.querySelectorAll("[data-lang-trigger]");
-      const translatables = document.querySelectorAll("[data-i18n]");
-
-      function setLanguage(lang) {
-        const dictionary = translations[lang] || translations.en;
+      function setLanguage(language) {
+        const lang = Object.hasOwn(translations, language) ? language : "en";
         document.documentElement.lang = lang;
-
-        translatables.forEach((node) => {
-          const key = node.getAttribute("data-i18n");
-          if (key && dictionary[key]) {
-            node.textContent = dictionary[key];
-          }
+        document.querySelectorAll("[data-i18n]").forEach((node) => {
+          node.textContent = translations[lang][node.dataset.i18n];
         });
-
-        langButtons.forEach((button) => {
-          button.classList.toggle("is-active", button.getAttribute("data-lang-trigger") === lang);
+        document.querySelectorAll("[data-lang-trigger]").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.langTrigger === lang));
         });
       }
-
-      langButtons.forEach((button) => {
-        button.addEventListener("click", () => setLanguage(button.getAttribute("data-lang-trigger")));
+      document.querySelectorAll("[data-lang-trigger]").forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.langTrigger));
       });
-
-      setLanguage("en");
     </script>
   </body>
 </html>
