@@ -7,7 +7,7 @@ This roadmap keeps the public portfolio honest, small, and verifiable.
 - Keep public project claims linked to real repositories or releases.
 - Improve accessibility, responsive layout, and link behavior.
 - Keep the site static, dependency-free, and easy to inspect.
-- Keep Zemiax wording accurate as a personal software studio.
+- Keep wording aligned with Vaguul as founder of the independent Zemiax, Lubu, and Daebor product families.
 
 ## Good first issues
 

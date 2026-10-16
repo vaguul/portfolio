@@ -1,6 +1,6 @@
-# Vaguul / Zemiax portfolio
+# Vaguul portfolio
 
-Minimal public portfolio for Vaguul, the programmer behind Zemiax.
+Minimal public portfolio for Vaguul, independent developer and founder of Zemiax, Lubu, and Daebor. These are three independent product families.
 
 - Live site: https://vaguul.github.io/portfolio/
 - Focus: automation, Discord and Telegram tooling, and self-hosted applications
